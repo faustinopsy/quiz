@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Servlets</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header role="banner" class="group">
+			<div id="logo">Servlets</div>
+			<!--  https://leaverou.github.io/css3patterns/ -->
+		</header>
+		
+		<div id="content" role="main">
+		<fieldset>
+		<form action="contador" method="get" id="form1">
+			<h2>Qual a sua Idade?</h2>
+			<div class="radio">
+			<label for="r1">Até 18</label>
+			<input type="radio" id="r1" name="idade" value="ate18">
+			</div>
+			<div class="radio">
+			<label for="r2">Entre 19 até 26</label>
+			<input type="radio" id="r2" name="idade" value="ate26">
+			</div>
+			<div class="radio">
+			<label for="r3">de 27 Até 35</label>
+			<input type="radio" id="r3" name="idade" value="ate35">
+			</div>
+			<div class="radio">
+			<label for="r4">Acima de 35</label>
+			<input type="radio" id="r4" name="idade" value="acima35">
+			</div>
+			<div class="radio">
+			<input type="submit" id="submitL" value="listar respostas"
+				formaction="listarrespostas" formmethod="get" >
+				<input type="submit" id="submit" value="Enviar">
+			</div>
+			</form>
+			</fieldset>
+		</div>
+	
+</div>
+</body>
+</html>
