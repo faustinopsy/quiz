@@ -147,6 +147,7 @@ header a {
 	display: block; 
 	padding-top: 40px; 
 	color: #0d0c0c; 
+	text-align: center;
 	text-transform: uppercase; 
 	font-family: 'BebasNeueBold'; 
 	font-size: 3em; /* 48 ÷ 16 = 3*/
@@ -229,6 +230,7 @@ nav ul li:nth-child(odd) a:hover {
 	font-size: 1.875em; /* 30px ÷ 16 */ 
 	text-transform: uppercase;
 	font-weight: 400;
+	text-align: center;
 }
 #content h2 em {
 	color: #FD0105;
@@ -351,7 +353,7 @@ footer span a {
 	float: left;
 	width: 100%;
 }
-#form1 fieldset {
+fieldset {
 	border: 1px dotted #ccc;
 	padding: 2%;
 	margin-bottom: 20px;
@@ -361,11 +363,16 @@ footer span a {
 	box-shadow: 2px 2px 5px hsla(0, 0%, 16.6667%, 0.3);
 }
 #form1 label {
-	width: 40%;
+	width: 55%;
 	font-size: 1.3em;
 	float: left;
+	text-align:right;
 }
-input {
+input[type="radio"] {
+    width:20px;
+    text-align:left;
+}
+input[type="submit"] {
 	height: 20px;
 	font-size: 1em;
 	width: 40%;
@@ -375,18 +382,17 @@ input {
 	height: 60px;
 	font-size: 1em;
 	width: 40%;
-	float: right;
+	float: center;
 }
 #form1 input#submit {
 	text-decoration: none;
 	height: 34px;
 	font: 1.25em /* 36px ÷ 16 */ 'BebasNeueRegular';
-	background-color: #b01c20;
+	background-color: #1ccb02;
 	border-radius: 8px;
 	color: white;
 	float: right;
 	margin-bottom: 10px;
-	background: linear-gradient(top, rgb(241,92,96) 0%, rgb(176,28,32) 100%);
 	margin-top: 10px;
 	box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);
 	text-shadow: 0px 1px black;
@@ -397,12 +403,11 @@ input {
 	text-decoration: none;
 	height: 34px;
 	font: 1.25em /* 36px ÷ 16 */ 'BebasNeueRegular';
-	background-color: #b01c20;
+	background-color: #1e1cb0;
 	border-radius: 8px;
 	color: white;
 	float: left;
 	margin-bottom: 10px;
-	background: linear-gradient(top, rgb(241,92,96) 0%, rgb(176,28,32) 100%);
 	margin-top: 10px;
 	box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);
 	text-shadow: 0px 1px black;
@@ -412,7 +417,7 @@ input {
 	float: right;
 }
 
-input:not([type="range"]), textarea, select {
+input:not([type="radio"]), textarea, select {
    border: 1px solid #bfbfbf;
    padding: 0.2em;
    font-size: 1.1em;
@@ -421,7 +426,7 @@ input:not([type="range"]), textarea, select {
    background: linear-gradient(top, #ffffff 0%,#ededed 8%,#ffffff 100%);
    border-radius: 4px;
    appearance: none;
-   box-shadow: 2px 2px 5px hsla(0, 0%, 16.6667%, 0.1);
+
 }
 
 input:required {
