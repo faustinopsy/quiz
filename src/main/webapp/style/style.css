@@ -376,11 +376,37 @@ input[type="radio"] {
     width:20px;
     text-align:left;
 }
+
+em{
+	color:blue;
+	font-size:1.3em;
+	margin-bottom:10px;
+	
+}
+fieldset div b, em, span{
+	display:block;
+}
+#form1 div b, #form1 div span{
+	font-size: 1.3em;
+	margin-bottom:10px;
+	
+}
+#form1 div[data-pos="left"]{
+	float:right;
+	width:10%;
+	txt-align:left;
+}
+#form1 div[data-pos="right"]{
+	float:right;
+	width:30%;
+	margin-bottom: 20px;
+	text-align:left;
+}
 input[type="submit"] {
 	height: 20px;
 	font-size: 1em;
 	width: 40%;
-	float: right;
+	margin-bottom: 50%;
 }
 #form1 textarea {
 	height: 60px;

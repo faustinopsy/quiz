@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -13,15 +13,26 @@
 			<!--  https://leaverou.github.io/css3patterns/ -->
 		</header>
 		
-		<div id="content" role="main">
+		<div id="content" role="main"> 
 		<fieldset>
 		<form action="index.html" method="get" id="form1">
-			<h2>OBRIGADO POR RESPONDER O QUIZ MANÉ</h2>
+		<div data-pos="left">
+			<b>Qtd.</b>
+			<em th:text="${ate18}"></em>
+			<em th:text="${ate26}"></em>
+			<em th:text="${ate35}"></em>
+			<em th:text="${ate99}"></em>
+		</div>
+		<div data-pos="right">
+			<b>Resposta</b>
+			<span>Até 18</span>
+			<span>Até 26</span>
+			<span>Até 35</span>
+			<span>Acima de 35</span>
+		</div>
 			
 			<div class="radio">
-			<input type="submit" id="submitL" value="listar respostas"
-				formaction="listarRespostas" formmethod="get" >
-				<input type="submit" id="submit" style="background-color:#df2d2d" value="Voltar">
+			<input type="submit" id="submit" style="background-color:#df2d2d" value="Voltar">
 			</div>
 			</form>
 			</fieldset>
